@@ -19,15 +19,16 @@ def reading_and_writing(number):
     if is_int(number):
         answer = solution(int(number))
     else:
-        answer = "net net net"
+        answer = 0
 
+    print("IM HERE BOOOY")
 
-    file_2 = open('answers.txt', 'a')
-    file_2.write(f'{answer} for number - {number} \n')
+    file_2 = open('ansers.txt', 'a')
+    file_2.write(f'{answer}\n')
     file_2.close()
 
     #file_1.close() Существует для чтения из файла
     return 0
 
 
-reading()
+
