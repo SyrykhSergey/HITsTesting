@@ -1,13 +1,7 @@
-3 for number - 3
- 
-60 for number - 15
- 
-33 for number - 10
- 
-495 for number - 45
- 
-45 for number - 14
- 
-0 for number - 1
- 
-net net net for number - serg 
+3
+60
+33
+495
+45
+0
+0

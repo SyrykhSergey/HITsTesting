@@ -1,8 +1,10 @@
 def solution(number):
-    if (type(number) == int):
+
+    if is_int(number):
+        number = int(number)
         return sum(x for x in range(number + 1) if x % 3 == 0 or x % 5 == 0)
     else:
-        return ("Иди опохмелись, брат")
+        return 0
 
 
 def is_int(str):
@@ -13,22 +15,26 @@ def is_int(str):
         return False
 
 
-def reading_and_writing(number):
-    #file_1 = open('arg.txt') Существует для чтения из файла
-    #for line in file_1:
-    if is_int(number):
-        answer = solution(int(number))
-    else:
-        answer = 0
+def reading_and_writing():
+    file_2 = open("ansers.txt", "w")
+    file_2.close()
+    file_1 = open('arg.txt') #Существует для чтения из файла
+    for line in file_1:
+        if is_int(line):
+            answer = solution(int(line))
+        else:
+            answer = 0
 
-    print("IM HERE BOOOY")
 
-    file_2 = open('ansers.txt', 'a')
-    file_2.write(f'{answer}\n')
+        file_2 = open('ansers.txt', 'a')
+        file_2.write(f'{answer}\n')
     file_2.close()
 
-    #file_1.close() Существует для чтения из файла
+    file_1.close() #Существует для чтения из файла
     return 0
+
+
+
 
 
 

@@ -12,7 +12,7 @@ def test_down_plank():
 def test_down_plank_sec():
     assert solution(2) == 0
 def test_negative_type():
-    assert solution('PudingLor') == 'Иди опохмелись, брат'
+    assert solution('PudingLor') == 0
 def test_negative_number():
     assert solution(-31) == 0
 
